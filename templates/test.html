@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <link rel="stylesheet" href="/static/css/test.css">
+{#    <style>#}
+{#        p.p{#}
+{#            color: blue;#}
+{#        }#}
+{#    </style>#}
+</head>
+<body>
+<p class="p">测试</p>
+<form action="/form/" method="post">
+    <input type="text" name="name" value="{{ usermessage.name }}">
+    <input type="email" name="email">
+    <input type="text" name="address">
+    <input type="text" name="message">
+    <input type="submit">
+    {% csrf_token %}
+</form>
+</body>
+
+</html>
